@@ -1,0 +1,16 @@
+{
+  "name": "slack-llm-mitm",
+  "version": "1.0.0",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Avin Lambrero <avin.github@gmail.com> (https://github.com/avin/)",
+  "license": "MIT",
+  "dependencies": {
+    "http-mitm-proxy": "^0.8.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4"
+  }
+}
