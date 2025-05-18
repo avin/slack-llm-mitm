@@ -34,8 +34,8 @@ if (Test-Path $pidFile) {
 Get-Process -Name slack -ErrorAction SilentlyContinue |
     Stop-Process -Force -ErrorAction SilentlyContinue | Out-Null
 
-# Ожидание перед запуском нового процесса
-Start-Sleep -Seconds 5
+# Waiting before starting a new process
+Start-Sleep -Seconds 3
 
 # Start proxy
 if ($DebugMode) {
