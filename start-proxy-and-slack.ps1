@@ -34,6 +34,9 @@ if (Test-Path $pidFile) {
 Get-Process -Name slack -ErrorAction SilentlyContinue |
     Stop-Process -Force -ErrorAction SilentlyContinue | Out-Null
 
+# Ожидание перед запуском нового процесса
+Start-Sleep -Seconds 5
+
 # Start proxy
 if ($DebugMode) {
     $proxyProcess = Start-Process -FilePath 'node' `
